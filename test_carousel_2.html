@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+<title>Untitled Document</title>
+
+<style> 
+
+#slideshow {
+
+margin: 50px auto;
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); } 
+
+#slideshow > div { 
+    position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; }
+
+#slideshow img{width: 240px; height: 240px;}
+
+#nav {
+    background:beige;
+    width:200;
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="slideshow">
+<div><img src="https://lh6.googleusercontent.com/d3ufPJhbQvluUMqqIpC3f_VQG9kToR3_h1xzYAATw_BaCj-HO7-K9J_rX_U24CwGidrXGAFEoJxKztc0anBCe7OZGQ-J06r4PSpBG4bFW7tOIABQ5l_OejYvmbJoriqTcCUjWtE" alt="" /></div>
+<div><img src="https://lh4.googleusercontent.com/p4X7ei4LazXV0FjkKlPsr4OdhGJyhOFaUydgTCA7SF2WAfeVAsVMLEzzqYc2MVLxEwL8ce8mJcUi7NiseXtF57UeGKzJer2pv2xEy-fCXnEt1ewHtud-6uFKMZZBMea0BznsVrE" alt="" /></div>
+<div><img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQJigrIv1_1Kwj9GHsZ6S9REGQtvTfFMP5gSa6q2OCKwV0nVETF" alt="" /></div>
+    
+    
+    <div><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQEZLYIsvVkUYd-OWRuMJsiGGeqtYdd_izoYfD-t_R6qwY6mz0ehQ" alt="" /></div>
+    
+    
+</div>
+
+<div id="nav">
+    <a href="#left" class="left">previous</a>
+    <a href="#right" class="right">next</a>
+</div>
+<script>
+
+$("#slideshow > div:gt(0)").hide();setInterval(function() {
+$('#slideshow > div:first')
+.fadeOut(1500)
+.next()
+.fadeIn(1500)
+.end()
+.appendTo('#slideshow');
+}, 2000);
+
+</script>
+
+</body>
+</html>
