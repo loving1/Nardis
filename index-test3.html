@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Raw Vegan Paradise | Prepared Food by Narda</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Inspired raw cooking, by Nardis (Narda) Yessi.  Join Nardis (Narda) for Raw Vegan Cooking Classes, Cooking Parties, Demos, and Private Meals Delivered to You and more!" />
+		<meta name="keywords" content="Raw, Vegan, Cooking, Classes, Parties, Demos, Private Meals, Delivered, Charles County, St. Mary's County, Maryland " />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" /> 
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+        
+        <style>@import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css');
+
+#myCarousel {
+  margin-top: 40px;
+}
+
+.carousel-linked-nav,
+.item img {
+  display: block; 
+  margin: 0 auto;
+}
+
+.carousel-linked-nav {
+  width: 120px;
+  margin-bottom: 20px;   
+}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-heart-o"></span>
+				<h1>Hi. Welcome to Raw Vegan Paradise. </h1>
+				<p>Raw un-cooking inspired to bring delicious foods into your life for you and your loved ones, <br/>  while making the world a better place and your body a healthy happy one.</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+			
+				<header class="major container small">
+					<h2>We bring foods and experiences
+					<br />
+					that will delight your senses and
+					<br />
+					change your sense of the world.</h2>
+					
+				</header>
+				
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="#demos" class="image icon fa-paper-plane-o"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Raw Un-Cooking </br> Classes and Demos</h3>
+							<p>One-on-One instruction on tools to use, techniques that work best and how to get the most flavor out of your foods.  We show you how to use the tools and get the most out of every meal.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="#parties" class="image icon fa-birthday-cake"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Raw Food Parties</h3>
+							<p>Are you just as enthusiastic about raw foods as we are?  We will bring the party to you, your best friends and your hardest to impress clients so that you can enjoy your guests while doing something right for your body and planet. </p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image icon fa-cab"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>Private Meal Delivery</h3>
+							<p>Want to enjoy all the benefits of raw food but don't have the time?  Let Narda do the un-cooking for you so that you can be prepared for the best that life has to offer without doing the prep-work.  Narda will work with you to make sure every meal is just what you desire.</p>
+						</div>
+					</section>
+				</div>
+
+
+				
+				
+				
+				<footer class="major container small">
+					<h3>Experience Life in the Raw</h3>
+                    
+                    <!--Begin Add  carousel -->
+                    
+                    <div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+        <figure>
+        <img src="http://placehold.it/300x200/888&text=Item 1" />
+            <figcaption>A cheeky macaque, Lower Kintaganban River, Borneo. Original by <a href="http://www.flickr.com/photos/rclark/">Richard Clark</a></figcaption>
+</figure>
+        
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/300x200/aaa&text=Item 2" />
+    </div>
+    <div class="item">
+        <img src="http://placehold.it/300x200/444&text=Item 3" />
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<!-- LINKED NAV -->
+<ol class="carousel-linked-nav pagination">
+  <li class="active"><a href="#1">1</a></li>
+  <li><a href="#2">2</a></li>
+  <li><a href="#3">3</a></li>
+</ol>
+
+<script> 
+// invoke the carousel
+$('#myCarousel').carousel({
+  interval: 3000
+});
+
+/* SLIDE ON CLICK */ 
+
+$('.carousel-linked-nav > li > a').click(function() {
+
+    // grab href, remove pound sign, convert to number
+    var item = Number($(this).attr('href').substring(1));
+
+    // slide to number -1 (account for zero indexing)
+    $('#myCarousel').carousel(item - 1);
+
+    // remove current active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // add active class to just clicked on item
+    $(this).parent().addClass('active');
+
+    // don't follow the link
+    return false;
+});
+
+/* AUTOPLAY NAV HIGHLIGHT */
+
+// bind 'slid' function
+$('#myCarousel').bind('slid', function() {
+
+    // remove active class
+    $('.carousel-linked-nav .active').removeClass('active');
+
+    // get index of currently active item
+    var idx = $('#myCarousel .item.active').index();
+
+    // select currently active item and add active class
+    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+});
+
+</script>
+                    
+                    <!--End Add carousel  --> 
+					<p>Work with Narda to develop your <strong> Raw </strong> and healthy lifestyle. </br> Experience new flavors, a new sense of self, better health .</p>
+					<ul class="actions">
+						<li>
+							<a href="mailto:nardabramer@gmail.com?Subject=Raw%20Food%20Paradse" target="_top" class="button">E-mail Narda Today</a>
+
+							<p> Or Call 301-538-3703 </p> 
+
+						</li>
+					</ul>
+				</footer>
+
+			</div>
+			
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container small">
+
+					<header class="major last">
+						<h2>About Narda</h2>
+					</header>
+
+					<a href="#" ><img src="images/Narda.jpg" alt="" /></a>
+
+					<p>Narda has been vegan for 2 years, being previously vegetarian for 5 years. She changed her eating habits 7 years ago when she moved from her homeland Ecuador after researching ingredients on the foods she was eating in the States. She realized she was eating "dead foods" that made her feel tired and also was stopping her from having a healthy body.  In 2007 she joined a Raw Vegan potluck and fell in love with the "living foods" and the joy that they bring to the everyday life. Since then she has never gone back.  - Change your life by changing the foods you eat !  </p>
+
+					<!--<div class="Nardacontainer">
+ 		 				<header>
+   						<div>
+   						<a href="index.html">
+   						<!--<img src="images/Narda.png" border="0" width="174" height="350" /> -->
+   						<!--<img class="center" src="images/Narda.jpg" border="0" width="700" height="350" />
+   						<img class="center" src="images/Narda.jpg" border="0"  />
+   						</a>
+   						</div>
+   						-->
+
+					<!--
+
+					<p>Start your Raw Food Paradise today! </p>
+
+					<form method="post" action="index.php">
+						<div class="row collapse-at-2">
+							<div class="6u">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="6u">
+								<input type="email" name="email" placeholder="Email" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+
+				-->
+				<!--
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+				-->
+					
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: Pure Nutrition Solutions and <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			
+				</div>
+			</div>
+
+	</body>
+</html>
