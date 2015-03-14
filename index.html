@@ -21,6 +21,8 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
         
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> 
+        
         <style> 
 		
 		
@@ -50,6 +52,7 @@ figcaption {
 	line-height: 20px;
 	font-size: 82%;
 	text-align: center;
+	font-family: 'Pacifico', cursive;
 }
 
 </style>
@@ -291,9 +294,9 @@ figcaption {
 
 $("#slideshow > div:gt(0)").hide();setInterval(function() {
 $('#slideshow > div:first')
-.fadeOut(1500)
+.fadeOut(2500)
 .next()
-.fadeIn(1500)
+.fadeIn(2500)
 .end()
 .appendTo('#slideshow');
 }, 2000);
